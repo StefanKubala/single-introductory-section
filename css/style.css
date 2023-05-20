@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #674baf url(../img/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 6.4rem 3.2rem 0 3.2rem;
+}
+
+.logo {
+    margin-bottom: 10rem;
+}
+
+.flex-wrapper {
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 4rem;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    margin-top: 5rem;
+}
+
+.main-heading {
+    font-size: 5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.text {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+    width: 75%;
+}
+
+.btn {
+    color: #674baf;
+    padding: 1.7rem 6.5rem;
+    font-size: 2rem;
+    border-radius: 4rem;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0.3px 6px 5px 1px #00000033;
+}
+
+.btn:hover,
+.btn:active {
+    color: #fff;
+    background-color: #e882e8;
+    scale: 1.1;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.social a {
+    font-size: 1.7rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    transition: ease-in 0.2s;
+    width: 4rem;
+}
+
+.social a:hover,
+.social a:active {
+    border: 2px solid #e882e8;
+    color: #e882e8;
+    scale: 1.1;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    html {
+        font-size: 50%;
+    }
+    
+    .left img {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    body {
+        background-image: url(../img/bg-mobile.svg);
+        height: auto;
+    }
+    
+    .flex-wrapper {
+        flex-direction: column; 
+        gap: 0;
+        
+     }
+ 
+     .right {
+         text-align: center;
+     }
+ 
+     .social {
+         justify-content: center;
+         margin-top: 2em;
+     }
+
+     .main-heading,
+     .text {
+        width: 100%;
+     }
+
+     .social {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        margin-bottom: 6rem;
+    }
+
+    .main-heading {
+        font-size: 3.5rem;
+    }
+}
